@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import {Section} from "./Components/Section"
+import Header from "./Components/A_Header/Header";
+import Body from "./Components/B_Body/Body";
+import Footer from './Components/Z_Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Section/> 
+      <Header/>
+      <Body/>
+      <Footer/>
     </div>
   );
 }
