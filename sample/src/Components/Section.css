@@ -1,3 +1,17 @@
-section{
-     background-color: aqua;
+.App{
+     background-color:salmon;
+     border-radius: 50px;
+     margin: 20px;
+     height: 700px;
+}
+.App h1{
+    text-align: center;
+}
+.App article{
+    background-color: blue;
+    border: dashed white;
+    border-radius: 50px;
+}
+.App ol,li,ul,h3{
+    margin-left: 30px;
 }

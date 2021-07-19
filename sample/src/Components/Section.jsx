@@ -1,5 +1,5 @@
 import React from 'react';
-import "..Components/Section.css";
+import "../Components/Section.css";
 
 export const Section=()=>{
     return(
@@ -15,6 +15,7 @@ export const Section=()=>{
             <li>metas</li>
           </ul>
         </article>
+        <hr />
         <article>
           <h3>CSS</h3>
           <ol>
@@ -24,6 +25,7 @@ export const Section=()=>{
             <li>opacity</li>
           </ol>
         </article>
+        <hr />
         <article>
           <h3>JS</h3>
           <ul type="Square">
@@ -33,6 +35,7 @@ export const Section=()=>{
             <li>optimisation</li>
           </ul>
         </article>
+        <hr />
       </section>
     </div>
     );
