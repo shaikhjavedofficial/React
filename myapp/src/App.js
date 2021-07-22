@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import "./components/Game"
+import Footer from './components/Footer';
 
 function App() {
   return (
+    <Footer/>
   //   <div className="App">
   //     <h1>List Of Institute</h1>
   // <table>
@@ -39,26 +40,7 @@ function App() {
   // </tr>
   // </table>
   // </div>
-  <div>
-    <table>
-      <tr>
-        <td id="11">x</td>
-        <td id="12">x</td>
-        <td id="13">x</td>
-      </tr>
-      <tr>
-        <td id="21">x</td>
-        <td id="22">x</td>
-        <td id="23">x</td>
-      </tr>
-      <tr>
-        <td id="31">x</td>
-        <td id="32">x</td>
-        <td id="33">x</td>
-      </tr>
-    </table>
-  </div>
-
+  
     ); 
 }
 
