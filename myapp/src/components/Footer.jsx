@@ -55,7 +55,6 @@ const Footer=()=>{
                 </div>
             </footer>
         </div>
-        <hr />
         <div>
             <footer id="footer2">
                 <p>copyright &copy;2021 PickupBiz | Developed & Designed By PickupBiz </p>
