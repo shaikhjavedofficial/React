@@ -1,3 +1,18 @@
 *{
-    margin: auto;
+    text-decoration: none;
+}
+#footer{
+    background-color: coral;
+    height: 300px;
+}
+.footer{
+    display: inline-block;
+    width: 300px;
+    margin-left: 10px;
+    text-align: justify;
+    height:300px;
+    vertical-align:middle ;
+}
+footer{
+    top: auto;
 }
