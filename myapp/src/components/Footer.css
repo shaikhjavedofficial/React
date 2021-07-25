@@ -2,7 +2,7 @@
     text-transform: capitalize;
 } 
 #footer{
-    background-color: rgb(122, 191, 255);
+    background-color: rgb(255, 194, 137);
     height: 300px;
     box-shadow:0 0 15px black;
     border-radius: 30px 30px 0px 0px;
@@ -50,11 +50,37 @@
 }
 #footer2{
     text-align: center;
-    background-color:navy ;
+    background-color:rgb(255, 119, 40);
     color: white;
     padding: 20px;
     font-size: 20px;
 }
 #contact a{
     font-size: 15px;
+}
+#about:hover{
+    transform: translate(-2px,1px);
+}
+#policy:hover{
+    transform: translate(-2px,1px);
+}
+#fundraising:hover{
+    transform: translate(-2px, 1px);
+    overflow: hidden;
+}
+.footer a:hover{
+    color: steelblue;
+}
+#about a:hover{
+    color: steelblue;
+}
+#fundraising a:hover{
+    color: steelblue;
+}
+#policy a:hover{
+    color: steelblue;
+}
+.copy a{
+    text-decoration: none;
+    color: navy;
 }

@@ -1,15 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from "./Components/A_Header/Header";
-import Body from "./Components/B_Body/Body";
-import Footer from './Components/Z_Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-bootstrap/Button';
+import {CourseLand, Courses} from "../src/Components/Reducer/CourseLand";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Body/>
-      <Footer/>
+      <CourseLand/>
     </div>
   );
 }

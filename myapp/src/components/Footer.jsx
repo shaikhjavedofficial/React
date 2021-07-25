@@ -24,8 +24,8 @@ const Footer=()=>{
                     <br />
                     <div id="contact">
                         <h3>Contact us</h3><hr /><br />
-                        Email:<a href="skjaved633@gmail.com">skjaved633@gmail.com</a><br />
-                        Phone:+918275199525
+                        Email:<a href="mailto:skjaved633@gmail.com">skjaved633@gmail.com</a><br />
+                        Phone: <a href="tel:+918275199525">+918275199525</a>
                     </div>
                 </div>
                 <div className="footer" id="about">
@@ -57,7 +57,7 @@ const Footer=()=>{
         </div>
         <div>
             <footer id="footer2">
-                <p>copyright &copy;2021 PickupBiz | Developed & Designed By PickupBiz </p>
+                <p className="copy">copyright &copy;2021 <a href="https://pickupbiz.com/">PickupBiz</a> | Developed & Designed By <a href="https://pickupbiz.com/">PickupBiz</a> </p>
             </footer>
         </div>
         </div>

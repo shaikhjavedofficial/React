@@ -1,10 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Carouse from "./components/Carouse";
 import Footer from './components/Footer';
-
+import Navba from "./components/Navbar"
 function App() {
   return (
+    <div>
+    <Navba/>
+    <Carouse/>
     <Footer/>
+    </div>
   //   <div className="App">
   //     <h1>List Of Institute</h1>
   // <table>
