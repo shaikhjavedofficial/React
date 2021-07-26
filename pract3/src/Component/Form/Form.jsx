@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Row, Col, Card, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Json } from "./Json";
 export const SetForm = () => {
-  const [fname, setFname] = useState("");
-  const [lname, setlname] = useState("");
-  const [line1, setLine1] = useState("");
-  const [line2, setLine2] = useState("");
-  const [city, setCity] = useState("");
-  const [photo, setPhoto] = useState("");
+  const { firstname, lastname, line, line0, cityName } = Json.Data[0];
+  const [fname, setFname] = useState(firstname);
+  const [lname, setlname] = useState(lastname);
+  const [line1, setLine1] = useState(line);
+  const [line2, setLine2] = useState(line0);
+  const [city, setCity] = useState(cityName);
+  // const [photo, setPhoto] = useState("");
   return (
     <div>
       <Row>
@@ -32,6 +34,7 @@ export const SetForm = () => {
                         type="text"
                         onChange={(e) => setFname(e.target.value)}
                         placeholder="Enter First Name"
+                        value={fname}
                       />
                     </Col>
                   </Row>
@@ -47,6 +50,7 @@ export const SetForm = () => {
                         type="text"
                         onChange={(e) => setlname(e.target.value)}
                         placeholder="Enter Last Name"
+                        value={lname}
                       />
                     </Col>
                   </Row>
@@ -60,6 +64,7 @@ export const SetForm = () => {
                           type="text"
                           onChange={(e) => setLine1(e.target.value)}
                           placeholder="Line 1"
+                          value={line1}
                         />
                       </Col>
                     </Row>
@@ -69,6 +74,7 @@ export const SetForm = () => {
                           type="text"
                           onChange={(e) => setLine2(e.target.value)}
                           placeholder="Line 2"
+                          value={line2}
                         />
                       </Col>
                     </Row>
@@ -78,10 +84,11 @@ export const SetForm = () => {
                           type="text"
                           onChange={(e) => setCity(e.target.value)}
                           placeholder="City"
-                        />
+                          value={city}
+                        ></Form.Control>
                       </Col>
                     </Row>
-                    <Row>
+                    {/* <Row>
                       <Col>
                         <Form.Control
                           type="file"
@@ -90,7 +97,7 @@ export const SetForm = () => {
                           placeholder="Photo"
                         />
                       </Col>
-                    </Row>
+                    </Row> */}
                   </Col>
                 </Form.Group>
               </Form>
@@ -98,12 +105,6 @@ export const SetForm = () => {
           </Card>
         </Col>
         <Col xs={4}>
-          <br />
-          <br />
-          <br />
-          <Button>Submit</Button>
-          <br />
-          <br />
           <Row>
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="Top" src="man.png" />
@@ -115,6 +116,7 @@ export const SetForm = () => {
               </Card.Body>
             </Card>
           </Row>
+          <Button>Submit</Button>
         </Col>
         <Col></Col>
       </Row>
