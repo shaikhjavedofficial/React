@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import { Row, Col, Card, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 export const SetForm = () => {
+  const [fname, setFname] = useState("");
+  const [lname, setlname] = useState("");
+  const [Line1, setLine1] = useState("");
+  const [Line2, setLine2] = useState("");
+  const [city, setCity] = useState("");
   return (
     <div>
       <Row>
@@ -75,7 +80,7 @@ export const SetForm = () => {
             <Card style={{ width: "18rem" }}>
               <Card.Img variant="Top" src="man.png" />
               <Card.Body>
-                <Form.Control />
+                <Form.Control></Form.Control>
               </Card.Body>
             </Card>
           </Row>
