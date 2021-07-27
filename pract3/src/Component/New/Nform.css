@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+
+.col-5 {
+    background-color: Navy;
+}
+
+#first {
+    background-color: burlywood;
+}
+
+#info {
+    padding: 0px;
+    background-color: cadetblue;
+}

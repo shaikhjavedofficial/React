@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 // import './App.css';
-import { SetForm } from "./Component/Form/Form";
+import {
+  SetNForm
+} from "./Component/New/Nform";
 
 function App() {
-  return (
-    <div className="App">
-      <SetForm/>
-    </div>
+  return ( <
+    div className = "App" >
+    <
+    SetNForm / >
+    <
+    /div>
   );
 }
 
