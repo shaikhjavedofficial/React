@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import { Card, Image, Row, Col, Button } from "react-bootstrap";
 export const ToggleComps = () => {
+  const [colorName, setColorName] = useState("Orange");
   return (
     <div>
       <Card>
+        <Button
+          onClick={() =>
+            colorName == "Blue" ? setColorName("Orange") : setColorName("Blue")
+          }
+        >
+          Revert
+        </Button>
         <h1>PickupBiz</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
@@ -12,9 +20,12 @@ export const ToggleComps = () => {
           debitis dignissimos, tempore cumque!
         </p>
         <h1>
-          <span style={{ color: "red" }}>PDAC Courses</span>
+          <span style={{ color: colorName }}>PDAC Courses</span>
         </h1>
-        <Button>Change Me</Button>
+        <Button onClick={() => setColorName("Blue")}>Blue</Button>
+        <Button onClick={() => setColorName("Green")}>Green</Button>
+        <Button onClick={() => setColorName("Red")}>Red</Button>
+        <Button onClick={() => setColorName("Black")}>Black</Button>
       </Card>
     </div>
   );
