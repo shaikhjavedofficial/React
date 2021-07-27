@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { Row, Col, Card, Form } from "react-bootstrap";
+import { Row, Col, Card, Form, Image } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Nform.css";
 export const SetNForm = () => {
@@ -11,6 +11,7 @@ export const SetNForm = () => {
   const [city, setCity] = useState("");
   const [Dob, setDob] = useState("");
   const [Qualification, setQualification] = useState("");
+  const [bulb, setBulb] = useState("son");
   // const [photo, setPhoto] = useState("");
   return (
     <div>
@@ -19,7 +20,7 @@ export const SetNForm = () => {
         <Col xs={5}>
           <br />
           <br />
-          <Card id="first">
+          <Card id={bulb === "son" ? "first" : "dark1"}>
             <Card.Body>
               <Form.Group>
                 <Col md={8}>
@@ -132,7 +133,10 @@ export const SetNForm = () => {
           <br />
           <br />
           <Row>
-            <Card style={{ width: "38rem" }} id="info">
+            <Card
+              style={{ width: "38rem" }}
+              id={bulb === "son" ? "info" : "dark1"}
+            >
               <Card.Body>
                 <Row>
                   <Col md={6}>
@@ -182,7 +186,15 @@ export const SetNForm = () => {
             </Card>
           </Row>
         </Col>
-        <Col xs={1}></Col>
+        <Col xs={1}>
+          <Image
+            src={`${bulb}.png`}
+            alt=""
+            height="30px"
+            width="50px"
+            onClick={() => (bulb == "soff" ? setBulb("son") : setBulb("soff"))}
+          />
+        </Col>
       </Row>
     </div>
   );

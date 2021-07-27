@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 // import './App.css';
 import {
-  SetNForm
-} from "./Component/New/Nform";
+  Home
+} from "./Component/Home";
 
 function App() {
   return ( <
     div className = "App" >
+
     <
-    SetNForm / >
+    Home / >
     <
     /div>
   );
