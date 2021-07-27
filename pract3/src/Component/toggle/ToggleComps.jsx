@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Image, Row, Col, Button } from "react-bootstrap";
 export const ToggleComps = () => {
   return (
