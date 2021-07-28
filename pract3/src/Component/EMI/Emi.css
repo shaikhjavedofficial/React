@@ -1,0 +1,24 @@
+#Form {
+    background-color: navajowhite;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    width: 600px;
+    color: navy;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.form-control {
+    text-align: center;
+    padding: 0;
+    margin-left: 110px;
+    border-radius: 20px;
+    margin-top: 5px;
+    width: 400px;
+}
+
+.btn-primary {
+    background-color: navy;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

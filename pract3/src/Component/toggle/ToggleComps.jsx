@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import { Card, Image, Row, Col, Button } from "react-bootstrap";
 export const ToggleComps = () => {
   const [colorName, setColorName] = useState("Orange");
+  const handleChange = () => {
+    colorName === "Orange" && setColorName("Red");
+    colorName === "Red" && setColorName("Green");
+
+    colorName === "Green" && setColorName("Black");
+    colorName === "Black" && setColorName("Red");
+  };
   return (
     <div>
       <Card>
-        <Button
-          onClick={() =>
-            colorName == "Blue" ? setColorName("Orange") : setColorName("Blue")
-          }
-        >
-          Revert
-        </Button>
+        <Button onClick={() => colorName == handleChange()}>Revert</Button>
         <h1>PickupBiz</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam

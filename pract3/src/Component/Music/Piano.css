@@ -1,0 +1,23 @@
+.btn-primary {
+    background-color: azure !important;
+    color: black !important;
+    height: 300px;
+    width: 50px;
+    box-shadow: 0 0 20px black;
+}
+
+.col {
+    margin-left: 10px;
+    padding: 0;
+    width: 10px;
+}
+
+.btn-primary:hover {
+    background-color: black !important;
+    color: blanchedalmond !important;
+}
+
+.btn-primary:active {
+    transform: scale(0.5);
+    transition: 1s;
+}
