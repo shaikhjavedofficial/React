@@ -1,0 +1,10 @@
+.player {
+    margin: 30px;
+    padding: 20px;
+    background-color: darksalmon !important;
+}
+
+.btn-primary {
+    color: darkseagreen;
+    background-color: grey !important;
+}

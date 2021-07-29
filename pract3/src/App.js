@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { AudioPlayer } from "./Component/other/AudioPlayer";
 import { Home } from "./Component/Home";
 
 function App() {
