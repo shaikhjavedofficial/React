@@ -19,7 +19,6 @@ export const EmpParent = () => {
     if (inputText === "") setEmpArray(EmpData.Data);
     else setEmpArray(filterArray);
   }, [inputText]);
-  console.log(EmpArray);
   return (
     <div className="ebody">
       <Navbar>
