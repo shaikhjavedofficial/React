@@ -1,20 +1,30 @@
 * {
     margin: 0;
-    background-color: blanchedalmond;
 }
 
-.search {
-    float: right;
+.ebody {
+    background-image: linear-gradient(to top, rgb(26, 18, 18), rgb(22, 12, 12))
+}
+
+.form-control {
+    position: fixed;
+    right: 0px;
     border-radius: 50px;
+    width: 400px;
+    padding: 10px;
 }
 
 .navbar {
+    background-color: silver;
     box-shadow: 0 0 10px black;
     position: sticky;
     top: 0;
     z-index: 5;
+    padding: 20px;
 }
 
 .card {
+    top: 40px;
     display: inline-block;
+    margin: 10px;
 }
