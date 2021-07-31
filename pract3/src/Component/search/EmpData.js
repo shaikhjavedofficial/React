@@ -1,9 +1,15 @@
 export const EmpData = {
   Data: [{
-      Name: "Sachin Tendulkar",
+      Name: "Munna Tyagi",
       IMG: "man.png",
-      Address: "Mumbai",
-      Dept: "Production",
+      Address: "MirzaPur",
+      Dept: "Production & Supply",
+    },
+    {
+      Name: "Srikant Tiwari",
+      IMG: "man.png",
+      Address: "Delhi",
+      Dept: "Analytics",
     },
     {
       Name: "Bhaskar Bhosle",
@@ -14,7 +20,7 @@ export const EmpData = {
     {
       Name: "Ravi Teja",
       IMG: "man.png",
-      Address: "Nasik",
+      Address: "Vizak",
       Dept: "Advertising",
     },
     {
@@ -30,22 +36,16 @@ export const EmpData = {
       Dept: "Export",
     },
     {
-      Name: "Munna Tyagi",
+      Name: "Rahul Khanna",
       IMG: "man.png",
-      Address: "MirzaPur",
-      Dept: "Production & Supply",
+      Address: "surat",
+      Dept: "Supply",
     },
     {
-      Name: "Srikant Tiwari",
+      Name: "Mahendra Bahubali",
       IMG: "man.png",
-      Address: "Delhi",
-      Dept: "Analytics",
-    },
-    {
-      Name: "Sachin Tendulkar",
-      IMG: "man.png",
-      Address: "Mumbai",
-      Dept: "Production",
+      Address: "Hyderabad",
+      Dept: "Q&A",
     },
     {
       Name: "Sachin Tendulkar",
@@ -53,5 +53,5 @@ export const EmpData = {
       Address: "Mumbai",
       Dept: "Production",
     },
-  ],
+  ]
 };
