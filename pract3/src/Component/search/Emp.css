@@ -1,0 +1,8 @@
+* {
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+.card {
+    display: inline-block;
+}

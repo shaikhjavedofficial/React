@@ -3,12 +3,18 @@
 // import { SetForm } from "./Form/Form";
 // import { ToggleComps } from "./toggle/ToggleComps";
 // import { Emi } from "./EMI/Emi";
-import { ParentPiano } from "./Music/ParentPiano";
+// import { ParentPiano } from "./Music/ParentPiano";
+// import { PracParent } from "./prac/PracParent";
+
+import { EmpParent } from "./search/EmpParent";
+
 export const Home = () => {
   // const [switch1, setSwitch1] = useState("son");
   return (
     <div>
-      <ParentPiano />
+      <EmpParent />
+      {/* <PracParent /> */}
+      {/* <ParentPiano /> */}
       {/* <Image
         src={`${switch1}.png`}
         alt=""
