@@ -3,6 +3,18 @@
     background-color: blanchedalmond;
 }
 
+.search {
+    float: right;
+    border-radius: 50px;
+}
+
+.navbar {
+    box-shadow: 0 0 10px black;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
 .card {
     display: inline-block;
 }
