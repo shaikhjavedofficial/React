@@ -1,14 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { AudioPlayer } from "./Component/other/AudioPlayer";
 import { Home } from "./Component/Home";
 
 function App() {
-  return (
-    <div className="App">
-      <Home />
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;

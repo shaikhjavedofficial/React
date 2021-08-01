@@ -2,17 +2,17 @@
 // import { SetNForm } from "./New/Nform";
 // import { SetForm } from "./Form/Form";
 // import { ToggleComps } from "./toggle/ToggleComps";
-// import { Emi } from "./EMI/Emi";
+import { Emi } from "./EMI/Emi";
 // import { ParentPiano } from "./Music/ParentPiano";
 // import { PracParent } from "./prac/PracParent";
 
-import { EmpParent } from "./search/EmpParent";
+// import { EmpParent } from "./search/EmpParent";
 
 export const Home = () => {
   // const [switch1, setSwitch1] = useState("son");
   return (
     <div>
-      <EmpParent />
+      <Emi />
       {/* <PracParent /> */}
       {/* <ParentPiano /> */}
       {/* <Image

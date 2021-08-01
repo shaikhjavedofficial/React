@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Form, Button, Row, Col } from "react-bootstrap";
 import "./Emi.css";
+import { Form, Button, Row, Col } from "react-bootstrap";
 
 export const Emi = () => {
   const [p, setP] = useState(0);
@@ -42,15 +42,14 @@ export const Emi = () => {
             <hr />
             <Row style={{ textAlign: "center" }}>
               <Col>
-                <Button type="Primary" onClick={handleEmi}>
+                <button type="Primary" onClick={(e) => handleEmi}>
                   Know EMI
-                </Button>
+                </button>
               </Col>
             </Row>
           </Row>
         </Form>
       </Col>
-      <Col xs={4}></Col>
     </div>
   );
 };

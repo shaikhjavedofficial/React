@@ -30,13 +30,7 @@ export const EmpParent = () => {
       </Navbar>
 
       {EmpArray.map((elem) => (
-        <Emp
-          FirstName={elem.FirstName}
-          LastName={elem.LastName}
-          IMG={elem.IMG}
-          Address={elem.Address}
-          Dept={elem.Dept}
-        />
+        <Emp items={elem} />
       ))}
     </div>
   );
