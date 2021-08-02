@@ -2,7 +2,7 @@
 // import { SetNForm } from "./New/Nform";
 // import { SetForm } from "./Form/Form";
 // import { ToggleComps } from "./toggle/ToggleComps";
-import { Emi } from "./EMI/Emi";
+// import { Emi } from "./EMI/Emi";
 // import { TabsManager } from "./TabsManager";
 // import { ParentPiano } from "./Music/ParentPiano";
 // import { PracParent } from "./prac/PracParent";
@@ -14,7 +14,7 @@ export const Home = () => {
   return (
     <div>
       {/* <TabsManager /> */}
-      <Emi />
+      {/* <Emi /> */}
       {/* <PracParent /> */}
       {/* <ParentPiano /> */}
       {/* <Image
