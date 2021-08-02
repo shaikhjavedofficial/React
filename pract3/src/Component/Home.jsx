@@ -3,6 +3,7 @@
 // import { SetForm } from "./Form/Form";
 // import { ToggleComps } from "./toggle/ToggleComps";
 import { Emi } from "./EMI/Emi";
+// import { TabsManager } from "./TabsManager";
 // import { ParentPiano } from "./Music/ParentPiano";
 // import { PracParent } from "./prac/PracParent";
 
@@ -12,6 +13,7 @@ export const Home = () => {
   // const [switch1, setSwitch1] = useState("son");
   return (
     <div>
+      {/* <TabsManager /> */}
       <Emi />
       {/* <PracParent /> */}
       {/* <ParentPiano /> */}

@@ -42,7 +42,10 @@ export const Emi = () => {
             <hr />
             <Row style={{ textAlign: "center" }}>
               <Col>
-                <button type="Primary" onClick={(e) => handleEmi}>
+                <button
+                  type="Primary"
+                  onClick={(e) => handleEmi(e.target.value)}
+                >
                   Know EMI
                 </button>
               </Col>
