@@ -6,6 +6,7 @@
 // import { TabsManager } from "./TabsManager";
 // import { ParentPiano } from "./Music/ParentPiano";
 // import { PracParent } from "./prac/PracParent";
+import { Login } from "./Login/Login";
 import { Landing } from "./Routes/Landing";
 // import { EmpParent } from "./search/EmpParent";
 
@@ -13,7 +14,8 @@ export const Home = () => {
   // const [switch1, setSwitch1] = useState("son");
   return (
     <div>
-      <Landing />
+      <Login />
+      {/* <Landing /> */}
       {/* <TabsManager /> */}
       {/* <Emi /> */}
       {/* <PracParent /> */}

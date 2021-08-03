@@ -1,0 +1,24 @@
+.card {
+    margin: auto;
+    margin-top: 150px;
+    background-color: slategray !important;
+    box-shadow: 0 0 20px rgb(5, 5, 5);
+    padding: 50px;
+    width: 400px;
+    border-radius: 0 50px 0 50px;
+}
+
+.form-control {
+    margin-top: 20px;
+    background-color: cornflowerblue;
+}
+
+.Butts {
+    margin: 20px;
+}
+
+.btn-primary {
+    background-color: black;
+    color: blanchedalmond;
+
+}
