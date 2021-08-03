@@ -4,7 +4,7 @@ import { Home2 } from "./Home2";
 import { About } from "./About";
 import { Courses } from "./Courses";
 import { Contact_Us } from "./Contact_Us";
-import { Services } from "./Services";
+import { Login } from "../Login/Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 export const Landing = () => {
   return (
@@ -25,8 +25,8 @@ export const Landing = () => {
             <Route path="/Contact_Us">
               <Contact_Us />
             </Route>
-            <Route path="/Services">
-              <Services />
+            <Route path="/Login">
+              <Login />
             </Route>
           </div>
         </Switch>

@@ -1,11 +1,11 @@
 .card {
     margin: auto;
     margin-top: 150px;
-    background-color: slategray !important;
     box-shadow: 0 0 20px rgb(5, 5, 5);
     padding: 50px;
     width: 400px;
-    border-radius: 0 50px 0 50px;
+    height: 400px;
+    border-radius: 10px
 }
 
 .form-control {
@@ -21,4 +21,9 @@
     background-color: black;
     color: blanchedalmond;
 
+}
+
+.form-label {
+    margin-left: 110px;
+    font-size: 20px;
 }

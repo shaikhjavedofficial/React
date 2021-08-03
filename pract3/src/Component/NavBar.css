@@ -1,0 +1,11 @@
+.navbar {
+    padding: 30px;
+    margin: auto;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}

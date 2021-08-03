@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "./NavBar.css";
 export const NavBar = () => {
   return (
     <div>
@@ -18,7 +18,7 @@ export const NavBar = () => {
               <NavLink to="/Courses">Courses</NavLink>
               <NavLink to="/Contact_Us">Contact Us</NavLink>
               <NavLink to="/About">About</NavLink>
-              <NavLink to="/Services">Services</NavLink>
+              <NavLink to="/Login">Login</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
