@@ -6,6 +6,8 @@ import "./Login.css";
 export const Login = () => {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [isValid, setIsValid] = useState(true);
+
   return (
     <div>
       <Row>
@@ -25,10 +27,10 @@ export const Login = () => {
             />
             <Row className="Butts">
               <Col>
-                <Button disabled>Sumbit</Button>
+                <Button disabled={isValid}>Sumbit</Button>
               </Col>
               <Col>
-                <Button disabled>Cancel</Button>
+                <Button disabled={isValid}>Cancel</Button>
               </Col>
             </Row>
           </Card>
