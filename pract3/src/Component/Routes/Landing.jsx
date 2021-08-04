@@ -5,7 +5,12 @@ import { About } from "./About";
 import { Courses } from "./Courses";
 import { Contact_Us } from "./Contact_Us";
 import { Login } from "../Login/Login";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useHistory,
+} from "react-router-dom";
 export const Landing = () => {
   return (
     <div>
