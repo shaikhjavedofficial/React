@@ -11,7 +11,7 @@ export const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <NavLink to="/Home">
-              <Navbar.Brand to="/">PDAC</Navbar.Brand>
+              <Navbar.Brand to="/Home">PDAC</Navbar.Brand>
             </NavLink>
             <Nav className="me-auto">
               <NavLink to="/Home">Home</NavLink>
