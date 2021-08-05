@@ -1,0 +1,3 @@
+exports.datet = () => {
+    return Date();
+};
