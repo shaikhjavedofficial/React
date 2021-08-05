@@ -7,6 +7,7 @@ export const API = () => {
       console.log(res.data);
     });
   };
+
   return (
     <div>
       <button onClick={handleApi}>click me</button>
