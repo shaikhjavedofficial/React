@@ -9,13 +9,15 @@
 // import { Calc } from "./P/Calc";
 // import { Landing } from "./Routes/Landing";
 // import { EmpParent } from "./search/EmpParent";
-import { Date } from "./Date/Date";
+// import { Date } from "./Date/Date";
+import { API } from "./API";
 
 export const Home = () => {
   // const [switch1, setSwitch1] = useState("son");
   return (
     <div>
-      <Date />
+      <API />
+      {/* <Date /> */}
       {/* <Calc /> */}
       {/* <Landing /> */}
       {/* <TabsManager /> */}
