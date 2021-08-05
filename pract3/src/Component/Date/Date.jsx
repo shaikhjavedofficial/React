@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import "./Date.css";
+import axios from "axios";
 
 export const Date = () => {
   const [sec, setSec] = useState(59);
@@ -18,9 +19,15 @@ export const Date = () => {
       }
     }
   }, 1000);
+  const handleApi = () => {
+    axios.get("http://localhost:40").then((res) => {
+      console.log(res);
+    });
+  };
   return (
     <div>
       <Card>
+        <Button onClick={handleApi}>call api </Button>
         <p>
           {Hour}:{min}:{sec}
         </p>
