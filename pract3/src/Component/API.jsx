@@ -3,8 +3,8 @@ import React from "react";
 
 export const API = () => {
   const handleApi = () => {
-    axios.get("https://localhost:40").then((res) => {
-      console.log(res);
+    axios.get("http://localhost:40").then((res) => {
+      console.log(res.data);
     });
   };
   return (
