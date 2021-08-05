@@ -6,15 +6,17 @@
 // import { TabsManager } from "./TabsManager";
 // import { ParentPiano } from "./Music/ParentPiano";
 // import { PracParent } from "./prac/PracParent";
-import { Calc } from "./P/Calc";
+// import { Calc } from "./P/Calc";
 // import { Landing } from "./Routes/Landing";
 // import { EmpParent } from "./search/EmpParent";
+import { Date } from "./Date/Date";
 
 export const Home = () => {
   // const [switch1, setSwitch1] = useState("son");
   return (
     <div>
-      <Calc />
+      <Date />
+      {/* <Calc /> */}
       {/* <Landing /> */}
       {/* <TabsManager /> */}
       {/* <Emi /> */}
