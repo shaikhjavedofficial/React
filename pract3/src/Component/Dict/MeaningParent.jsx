@@ -6,7 +6,7 @@ export const MeaningParent = ({ item }) => {
       <h2>Meaning List</h2>
       {item.meanings.map((elem) => {
         <MeaningChild />;
-        console.log(item);
+        console.log(elem);
       })}
     </div>
   );
