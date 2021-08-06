@@ -1,0 +1,16 @@
+.cards {
+    background-color: navajowhite;
+    margin: 20px;
+}
+
+.btn {
+    display: inline !important;
+    padding: 5px;
+    background-color: salmon;
+}
+
+.form-control {
+    display: inline !important;
+    width: 300px;
+    margin: 10px;
+}
