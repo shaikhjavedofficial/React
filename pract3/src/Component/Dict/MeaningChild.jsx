@@ -6,7 +6,18 @@ export const MeaningChild = ({ elem }) => {
     <div>
       <Card className="Meaning">
         <Card.Title>{elem.partOfSpeech}</Card.Title>
-        <Card.Text>price</Card.Text>
+        <Card.Text>
+          {elem.definations.map(
+            (def, index) => (
+              (
+                <span>
+                  {index + 1}. {def.defination}{" "}
+                </span>
+              ),
+              (<span>{def.example}</span>)
+            )
+          )}
+        </Card.Text>
         <Card.Text>Percentage</Card.Text>
         <Card.Text></Card.Text>
       </Card>

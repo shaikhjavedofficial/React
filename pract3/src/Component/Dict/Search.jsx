@@ -10,14 +10,7 @@ import {
 } from "react-bootstrap";
 import "./Search.css";
 import SearchIcon from "@material-ui/icons/Search";
-export const Search = ({ handleSearch }) => {
-  const [SearchText, setSearchText] = useState("");
-  console.log(SearchText);
-  // useEffect(() => {
-  //   const Filter = SearchText.filter((item) => {
-  //     item.toLowerCase();
-  //   });
-  // }, [SearchText]);
+export const Search = ({ handleSearch, setSearchText }) => {
   return (
     <div>
       <Row>
@@ -27,7 +20,10 @@ export const Search = ({ handleSearch }) => {
             <Card.Body>
               <Row>
                 <Col>
-                  <Form.Control placeholder="Search Here" />
+                  <Form.Control
+                    placeholder="Search Here"
+                    onChange={(e) => setSearchText(e.target.value)}
+                  />
                   <Button onClick={handleSearch}>
                     <SearchIcon className="searchicon" />
                   </Button>

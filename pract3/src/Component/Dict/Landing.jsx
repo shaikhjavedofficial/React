@@ -9,9 +9,10 @@ import { Card } from "react-bootstrap";
 
 export const Landing = () => {
   const [resData, setResData] = useState([]);
+  const [searchText, setSearchText] = useState("");
   const handleSearch = () => {
     axios
-      .get("https://api.dictionaryapi.dev/api/v2/entries/en_US/rate")
+      .get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${searchText}`)
       .then((res) => {
         setResData([...res.data]);
       });
@@ -20,7 +21,7 @@ export const Landing = () => {
     <div>
       <Card className="back">
         <Card.Title>Dictionary</Card.Title>
-        <Search handleSearch={handleSearch} />
+        <Search handleSearch={handleSearch} setSearchText={setSearchText} />
         <Phonetics />
         <Dict resData={resData} />
       </Card>
