@@ -11,10 +11,9 @@ export const Dict = ({ resData }) => {
         <Col>
           <Row>
             <Col>
-              {resData.map((item) => {
-                item.meanings.length > 0 && <MeaningParent item={item} />;
-                console.log(item);
-              })}
+              {resData.map((items) => (
+                <MeaningParent m={items} />
+              ))}
             </Col>
             <Col>
               <Synonyms />

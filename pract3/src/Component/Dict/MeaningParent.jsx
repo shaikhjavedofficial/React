@@ -1,13 +1,13 @@
 import React from "react";
 import { MeaningChild } from "./MeaningChild";
-export const MeaningParent = ({ item }) => {
+export const MeaningParent = ({ m }) => {
+  console.log(m);
   return (
     <div>
       <h2>Meaning List</h2>
-      {item.meanings.map((elem) => {
-        <MeaningChild elem={elem} />;
-        console.log(elem);
-      })}
+      {m.meanings.map((elem) => (
+        <MeaningChild finalitem={elem} />
+      ))}
     </div>
   );
 };
