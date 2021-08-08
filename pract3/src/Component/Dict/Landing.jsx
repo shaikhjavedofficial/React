@@ -20,9 +20,9 @@ export const Landing = () => {
   return (
     <div>
       <Card className="back">
-        <Card.Title>Dictionary</Card.Title>
+        <Card.Title className="tit">Dictionary</Card.Title>
         <Search handleSearch={handleSearch} setSearchText={setSearchText} />
-        <Phonetics />
+        <Phonetics resData={resData} />
         <Dict resData={resData} />
       </Card>
     </div>

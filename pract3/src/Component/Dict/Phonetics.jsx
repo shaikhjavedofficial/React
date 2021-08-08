@@ -3,7 +3,7 @@ import { Card, Row, Col } from "react-bootstrap";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import "./Phonetics.css";
 
-export const Phonetics = () => {
+export const Phonetics = ({ resData }) => {
   return (
     <div>
       <Row>
@@ -11,10 +11,17 @@ export const Phonetics = () => {
         <Col>
           <Card className="Phonetics">
             <Row>
-              <Col></Col>
+              <Col>
+                {resData.map(
+                  (items) =>
+                    items.meanings.length > 0 && <i>{items.phonetic}</i>
+                )}
+              </Col>
               <Col>
                 Play :
-                <PlayArrowIcon />
+                <PlayArrowIcon
+                  onClick={() => handleAudio(item.phonetics[0].audio)}
+                />
               </Col>
             </Row>
           </Card>

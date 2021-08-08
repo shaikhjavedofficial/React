@@ -4,6 +4,7 @@ import { Synonyms } from "./Synonyms";
 import { Antonyms } from "./Antonyms";
 import { MeaningParent } from "./MeaningParent";
 export const Dict = ({ resData }) => {
+  console.log(resData);
   return (
     <div>
       <Row>
@@ -11,13 +12,22 @@ export const Dict = ({ resData }) => {
         <Col>
           <Row>
             <Col>
-              {resData.map((items) => (
-                <MeaningParent m={items} />
-              ))}
+              {resData.map(
+                (items) =>
+                  items.meanings.length > 0 && <MeaningParent m={items} />
+              )}
             </Col>
             <Col>
-              <Synonyms />
-              <Antonyms />
+              <Row>
+                {resData.map(
+                  (items) => items.meanings.length > 0 && <Synonyms m={items} />
+                )}
+              </Row>
+              <Row>
+                {resData.map(
+                  (items) => items.meanings.length > 0 && <Antonyms m={items} />
+                )}
+              </Row>
             </Col>
           </Row>
         </Col>

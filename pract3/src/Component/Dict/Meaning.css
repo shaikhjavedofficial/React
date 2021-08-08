@@ -6,8 +6,16 @@
 
     box-shadow: 0 0 10px black;
     margin-top: 20px;
+    text-align: left;
+    font-size: 30px;
+    padding: 10px;
 }
 
 .back {
     background-color: navajowhite;
+}
+
+.tit {
+    text-align: center;
+    font-size: 30px;
 }

@@ -2,6 +2,8 @@
     font-size: large;
     background-color: navajowhite;
     box-shadow: 0 0 10px black;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .MuiSvgIcon-root {
