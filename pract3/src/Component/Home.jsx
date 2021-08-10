@@ -11,7 +11,7 @@
 // import { EmpParent } from "./search/EmpParent";
 // import { Date } from "./Date/Date";
 // import { API } from "./API";
-import { Landing } from "./Dict/Landing";
+// import { Landing } from "./Dict/Landing";
 
 export const Home = () => {
   // const [switch1, setSwitch1] = useState("son");
@@ -20,7 +20,7 @@ export const Home = () => {
       {/* <API /> */}
       {/* <Date /> */}
       {/* <Calc /> */}
-      <Landing />
+      {/* <Landing /> */}
       {/* <TabsManager /> */}
       {/* <Emi /> */}
       {/* <PracParent /> */}
