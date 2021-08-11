@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Emi.css";
 import { Form, Button, Row, Col } from "react-bootstrap";
 
@@ -13,6 +13,9 @@ export const Emi = () => {
     const repayEmi = repayAmmount / (n * 12);
     setEmi(repayEmi);
   };
+  // useEffect(() => {
+  //   handleEmi();
+  // }, [p, n, r]);
   return (
     <div>
       <Col xs={4}></Col>
@@ -42,12 +45,7 @@ export const Emi = () => {
             <hr />
             <Row style={{ textAlign: "center" }}>
               <Col>
-                <button
-                  type="Primary"
-                  onClick={(e) => handleEmi(e.target.value)}
-                >
-                  Know EMI
-                </button>
+                <Button onClick={handleEmi}>Know EMI</Button>
               </Col>
             </Row>
           </Row>
