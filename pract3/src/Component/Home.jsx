@@ -12,13 +12,13 @@ import { Emi } from "./EMI/Emi";
 // import { Date } from "./Date/Date";
 // import { API } from "./API";
 // import { Landing } from "./Dict/Landing";
-import { Login } from "./Login/Login";
+// import { Login } from "./Login/Login";
 
 export const Home = () => {
   // const [switch1, setSwitch1] = useState("son");
   return (
     <div>
-      <Login />
+      {/* <Login /> */}
       {/* <API /> */}
       {/* <Date /> */}
       {/* <Calc /> */}
