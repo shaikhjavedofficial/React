@@ -1,7 +1,8 @@
-// import { Row, Col, Card, Form, Image, Container } from "react-bootstrap";
+import { Row, Col, Card, Form, Image, Container } from "react-bootstrap";
 // import { SetNForm } from "./New/Nform";
 // import { SetForm } from "./Form/Form";
 // import { ToggleComps } from "./toggle/ToggleComps";
+import React, { Fragment, useState } from "react";
 import { Emi } from "./EMI/Emi";
 // import { TabsManager } from "./TabsManager";
 // import { ParentPiano } from "./Music/ParentPiano";
@@ -16,15 +17,17 @@ import { Emi } from "./EMI/Emi";
 
 export const Home = () => {
   // const [switch1, setSwitch1] = useState("son");
+  const [Discount, setDiscount] = useState(0);
   return (
-    <div>
+    <React.Fragment>
       {/* <Login /> */}
       {/* <API /> */}
       {/* <Date /> */}
       {/* <Calc /> */}
       {/* <Landing /> */}
       {/* <TabsManager /> */}
-      <Emi />
+      <Form.Control onChange={(e) => setDiscount(e.target.value)} />
+      <Emi Discount={Discount} />
       {/* <PracParent /> */}
       {/* <ParentPiano /> */}
       {/* <Image
@@ -38,6 +41,7 @@ export const Home = () => {
       />
       {switch1 == "soff" ? <SetNForm /> : <SetForm />}
       <ToggleComps /> */}
-    </div>
+      {/* export default useMemo(APPNAME) to apply on */}
+    </React.Fragment>
   );
 };

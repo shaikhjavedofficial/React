@@ -1,18 +1,20 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import "./Emi.css";
 import { Form, Button, Row, Col } from "react-bootstrap";
 
-export const Emi = () => {
+export const Emi = ({ Discount }) => {
   const [p, setP] = useState(0);
   const [n, setN] = useState(0);
   const [r, setR] = useState(0);
-  const [emi, setEmi] = useState(0);
+  // const [emi, setEmi] = useState(0);
   const handleEmi = () => {
     const si = (p * n * r) / 100;
     const repayAmmount = Number(p) + Number(si);
     const repayEmi = repayAmmount / (n * 12);
-    setEmi(repayEmi);
+    // setEmi(repayEmi);
+    return repayEmi - repayEmi * (Discount / 100);
   };
+  const emi = useMemo(() => handleEmi(), [p, n, r, Discount]);
   // useEffect(() => {
   //   handleEmi();
   // }, [p, n, r]);
