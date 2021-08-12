@@ -4,6 +4,7 @@ import { Row, Col, Card, Form, Image, Container } from "react-bootstrap";
 // import { ToggleComps } from "./toggle/ToggleComps";
 import React, { Fragment, useState } from "react";
 import { Emi } from "./EMI/Emi";
+import { Prac1 } from "./Redux/prac1";
 // import { TabsManager } from "./TabsManager";
 // import { ParentPiano } from "./Music/ParentPiano";
 // import { PracParent } from "./prac/PracParent";
@@ -20,14 +21,15 @@ export const Home = () => {
   const [Discount, setDiscount] = useState(0);
   return (
     <React.Fragment>
+      <Prac1 />
       {/* <Login /> */}
       {/* <API /> */}
       {/* <Date /> */}
       {/* <Calc /> */}
       {/* <Landing /> */}
       {/* <TabsManager /> */}
-      <Form.Control onChange={(e) => setDiscount(e.target.value)} />
-      <Emi Discount={Discount} />
+      {/* <Form.Control onChange={(e) => setDiscount(e.target.value)} />
+      <Emi Discount={Discount} /> */}
       {/* <PracParent /> */}
       {/* <ParentPiano /> */}
       {/* <Image

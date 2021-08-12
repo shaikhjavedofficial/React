@@ -1,17 +1,18 @@
-import { v4 as uuidv4 } from "uuid";
+import {
+  v4 as uuidv4
+} from "uuid";
 
-const empReducer = {
-  groups: [
-    {
+const EmpReducer = {
+  groups: [{
       id: uuidv4(),
       name: "Shaikh Javed",
-      age: "23",
+      age: "26",
       desc: "this is first group",
     },
     {
       id: uuidv4(),
       name: "Khaja Umar",
-      age: "23",
+      age: "27",
       desc: "this is 2nd group",
     },
     {
@@ -22,12 +23,12 @@ const empReducer = {
     },
   ],
 };
-export const groupReducer = (state = empReducer, action) => {
+export const groupReducer = (state = EmpReducer, action) => {
   switch (action.type) {
     case "ADD_NEW_GROUP":
       return {
         ...state,
-        groups: [action.groups, ...state.groups],
+        groups: [action.groups, ...state.groups], //if you run this it will print new data first to print new data last us [...state.groups, action.groups]
       };
     default:
       return state;
