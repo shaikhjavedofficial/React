@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Form, Navbar } from "react-bootstrap";
 import { Emp } from "./Emp";
-import { EmpData } from "./EmpData";
+// import { EmpData } from "./EmpData";
 import { useSelector } from "react-redux";
 import { getEmpDetails } from "./State/Selector/EmpSelector";
 
