@@ -4,20 +4,24 @@ import { useState } from "react";
 import { Form, Navbar } from "react-bootstrap";
 import { Emp } from "./Emp";
 import { EmpData } from "./EmpData";
+import { useSelector } from "react-redux";
+import { getEmpDetails } from "./State/Selector/EmpSelector";
 
 export const EmpParent = () => {
-  const [EmpArray, setEmpArray] = useState(EmpData.Data);
+  const selector = useSelector(getEmpDetails);
+  const [empData, setEmpData] = useState(selector);
+  // const [EmpArray, setEmpArray] = useState(EmpData.Data);
   const [inputText, setInputText] = useState("");
   useEffect(() => {
-    const filterArray = EmpArray.filter(
+    const filterArray = empData.filter(
       (item) =>
         item.FirstName.toLowerCase().includes(inputText.toLowerCase()) ||
         item.LastName.toLowerCase().includes(inputText.toLowerCase()) ||
         item.Dept.toLowerCase().includes(inputText.toLowerCase()) ||
         item.Address.toLowerCase().includes(inputText.toLowerCase())
     );
-    if (inputText === "") setEmpArray(EmpData.Data);
-    else setEmpArray(filterArray);
+    if (inputText === "") setEmpData(empData);
+    else setEmpData(filterArray);
   }, [inputText]);
   return (
     <div className="ebody">
@@ -29,7 +33,7 @@ export const EmpParent = () => {
         />
       </Navbar>
 
-      {EmpArray.map((elem) => (
+      {empData.map((elem) => (
         <Emp items={elem} />
       ))}
     </div>

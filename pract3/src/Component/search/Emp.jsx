@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Emp.css";
+
 export const Emp = ({ items }) => {
   return (
     <Card style={{ width: "18rem" }}>
