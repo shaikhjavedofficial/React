@@ -10,6 +10,7 @@ import { getEmpDetails } from "./State/Selector/EmpSelector";
 export const EmpParent = () => {
   const selector = useSelector(getEmpDetails);
   const [empData, setEmpData] = useState(selector);
+  
   // const [EmpArray, setEmpArray] = useState(EmpData.Data);
   const [inputText, setInputText] = useState("");
   useEffect(() => {

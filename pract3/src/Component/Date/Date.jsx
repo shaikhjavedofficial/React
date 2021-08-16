@@ -19,15 +19,15 @@ export const Date = () => {
       }
     }
   }, 1000);
-  const handleApi = () => {
-    axios.get("http://localhost:40").then((res) => {
-      console.log(res);
-    });
-  };
+  // const handleApi = () => {
+  //   axios.get("http://localhost:40").then((res) => {
+  //     console.log(res);
+  //   });
+  // };
   return (
     <div>
       <Card>
-        <Button onClick={handleApi}>call api </Button>
+        {/* <Button onClick={handleApi}>call api </Button> */}
         <p>
           {Hour}:{min}:{sec}
         </p>
