@@ -25,7 +25,7 @@ export const Home = () => {
       {/* <Prac1 /> */}
       {/* <Login /> */}
       {/* <API /> */}
-      <Date />
+      {/* <Date /> */}
       {/* <Calc /> */}
       {/* <Landing /> */}
       {/* <TabsManager /> */}
