@@ -1,16 +1,29 @@
-import React from "react";
-import { Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Row, Col, Card } from "react-bootstrap";
+import { AddToDoItem } from "./ToDoList/AddToDoItem";
+import { ToDoList } from "./ToDoList/ToDoList";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./ToDoList/ToDo.css";
+
 export const Home = () => {
+  const [toDoItems, setToDoItems] = useState([
+    "Learning React",
+    "Interview prep",
+  ]);
+  const handleAdd = (newToDo) => {
+    setToDoItems([...toDoItems, newToDo]);
+  };
+
   return (
-    <React.Fragment className="Home">
-      <Row>
+    <Card>
+      <Row className="home">
         <Col>
-          <AddToDoItem />
+          <AddToDoItem handleAdd={handleAdd} />
         </Col>
         <Col>
-          <ToDoList />
+          <ToDoList toDoItems={toDoItems} />
         </Col>
       </Row>
-    </React.Fragment>
+    </Card>
   );
 };
