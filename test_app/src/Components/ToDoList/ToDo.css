@@ -1,6 +1,10 @@
+.row {
+    background-image: linear-gradient(45deg, red, yellow, ) !important;
+}
+
 .home {
     margin-top: 10px;
-    background-color: #0A1D37;
+    /* background-color: #0A1D37;    */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px black;
