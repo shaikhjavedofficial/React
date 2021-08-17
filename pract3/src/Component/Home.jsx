@@ -10,7 +10,7 @@ import React, { Fragment, useState } from "react";
 // import { PracParent } from "./prac/PracParent";
 // import { Calc } from "./P/Calc";
 // import { Landing } from "./Routes/Landing";
-// import { EmpParent } from "./search/EmpParent";
+import { EmpParent } from "./search/EmpParent";
 // import { Date } from "./Date/Date";
 // import { API } from "./API";
 // import { Landing } from "./Dict/Landing";
@@ -21,7 +21,7 @@ export const Home = () => {
   // const [Discount, setDiscount] = useState(0);
   return (
     <React.Fragment>
-      {/* <EmpParent /> */}
+      <EmpParent />
       {/* <Prac1 /> */}
       {/* <Login /> */}
       {/* <API /> */}
