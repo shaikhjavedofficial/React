@@ -3,8 +3,6 @@ import { Row, Col, Card, Form, Image, Container } from "react-bootstrap";
 // import { SetForm } from "./Form/Form";
 // import { ToggleComps } from "./toggle/ToggleComps";
 import React, { Fragment, useState } from "react";
-import { AddToDoItem } from "./ToDoList/AddToDoItem";
-import { ToDoList } from "./ToDoList/ToDoList";
 // import { Emi } from "./EMI/Emi";
 // import { Prac1 } from "./Redux/prac1";
 // import { TabsManager } from "./TabsManager";
@@ -23,14 +21,6 @@ export const Home = () => {
   // const [Discount, setDiscount] = useState(0);
   return (
     <React.Fragment>
-      <Row>
-        <Col>
-          <AddToDoItem />
-        </Col>
-        <Col>
-          <ToDoList />
-        </Col>
-      </Row>
       {/* <EmpParent /> */}
       {/* <Prac1 /> */}
       {/* <Login /> */}
