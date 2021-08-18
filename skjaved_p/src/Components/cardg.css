@@ -1,0 +1,92 @@
+* {
+    background-color: burlywood;
+}
+
+.card1 {
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 100px;
+}
+
+.card2 {
+    box-shadow: 0 0 10px black;
+    background-color: black;
+    height: 100px;
+}
+
+.card3 {
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 100px;
+}
+
+.card4 {
+    box-shadow: 0 0 10px black;
+    background-color: black;
+    height: 100px;
+}
+
+.card5 {
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 100px;
+}
+
+.card6 {
+    box-shadow: 0 0 10px black;
+    background-color: black;
+    height: 100px;
+}
+
+.card7 {
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 100px;
+}
+
+.card8 {
+    box-shadow: 0 0 10px black;
+    background-color: black;
+    height: 100px;
+}
+
+.card9 {
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 100px;
+}
+
+.card10 {
+    box-shadow: 0 0 10px black;
+    background-color: black;
+    height: 100px;
+}
+
+.card11 {
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    height: 100px;
+}
+
+.card12 {
+    box-shadow: 0 0 10px black;
+    background-color: black;
+    height: 100px;
+}
+
+.row {
+    display: flexbox;
+    justify-content: flex-start;
+}
+
+#white {
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    height: 100px;
+}
+
+#black {
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    height: 100px;
+}

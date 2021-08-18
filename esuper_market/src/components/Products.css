@@ -1,0 +1,15 @@
+.card {
+    margin: 10px;
+    padding: 20px;
+    background-image: linear-gradient(390deg, black, silver);
+}
+
+.btn-primary {
+    background-color: crimson;
+}
+
+.list {
+    background-color: dodgerblue;
+    margin: 20px;
+    padding: 20px;
+}
