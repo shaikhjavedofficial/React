@@ -6,7 +6,7 @@ export const ProductList = () => {
     <React.Fragment>
       <Row>
         <Col md={3}>
-          <ProducItem data={"Product1"} { data.include("") remove={[]}} />
+          <ProducItem data={"Product1"} remove={[]} />
         </Col>
         <Col>
           <ProducItem data={"Product2"} remove={[]} />
