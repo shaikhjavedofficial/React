@@ -1,11 +1,16 @@
 import React from "react";
-import { Card, Button, Row, Col, Form } from "react-bootstrap";
+import { Card, Button, Row, Col, Form, Image } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import "./Products.css";
 export const ProducItem = ({ data, remove }) => {
   const dispatch = useDispatch();
   return (
     <Card claasName="card">
+      <Row>
+        <Col>
+          <Image src="logo192.png" />
+        </Col>
+      </Row>
       <Row>
         <Col>
           <Button
