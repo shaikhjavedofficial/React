@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Button, Row, Col, Form } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import "./Products.css";
-export const ProducItem = () => {
+export const ProducItem = ({ data, remove }) => {
   const dispatch = useDispatch();
   return (
     <Card claasName="card">
@@ -12,7 +12,7 @@ export const ProducItem = () => {
             onClick={() =>
               dispatch({
                 type: "ADD_PRODUCT",
-                data: ["Soap"],
+                data: [{ data }],
               })
             }
           >
@@ -24,7 +24,7 @@ export const ProducItem = () => {
             onClick={() =>
               dispatch({
                 type: "REMOVE_PRODUCT",
-                data: [],
+                data: [{ remove }],
               })
             }
           >

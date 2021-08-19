@@ -4,6 +4,7 @@ import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navs.css";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 export const NavBar = () => {
   const products = useSelector((state) => state.ProductReducer.product);
   return (
@@ -16,13 +17,15 @@ export const NavBar = () => {
           </NavLink>
           <Nav className="me-auto">
             <NavLink to="/Home2">Home</NavLink>
-            <NavLink to="/ProducItem">ProducItem</NavLink>
+            <NavLink to="/ProductList">ProducList</NavLink>
             <NavLink to="/Contact_us">Contact Us</NavLink>
-            <Col style={{ color: "white" }}>Cart : {products.length}</Col>
-            <NavLink to="/Login" className="login">
-              Login
-            </NavLink>
           </Nav>
+          <span style={{ color: "white", padding: "25px" }}>
+            <ShoppingCartIcon /> <sup> {products.length}</sup>
+          </span>
+          <NavLink to="/Login" className="login">
+            Login
+          </NavLink>
         </Navbar.Collapse>
       </Navbar>
     </div>

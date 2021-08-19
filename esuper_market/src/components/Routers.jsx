@@ -1,7 +1,7 @@
 import React from "react";
 import { NavBar } from "./NavBar";
 import { Home2 } from "./Home2";
-import { ProducItem } from "./ProducItem";
+import { ProductList } from "./ProductList";
 import { Contact_us } from "./Contact_us";
 import { Login } from "./Login";
 import {
@@ -20,8 +20,8 @@ export const Routers = () => {
             <Route path="/Home">
               <Home2 />
             </Route>
-            <Route path="/ProducItem">
-              <ProducItem />
+            <Route path="/ProductList">
+              <ProductList />
             </Route>
             <Route path="/Contact_us">
               <Contact_us />

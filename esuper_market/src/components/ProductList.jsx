@@ -5,11 +5,11 @@ export const ProductList = () => {
   return (
     <React.Fragment>
       <Row>
-        <Col>
-          <ProducItem />
+        <Col md={3}>
+          <ProducItem data={"Product1"} { data.include("") remove={[]}} />
         </Col>
         <Col>
-          <ProducItem />
+          <ProducItem data={"Product2"} remove={[]} />
         </Col>
         <Col>
           <ProducItem />
