@@ -1,11 +1,9 @@
 import React from "react";
-import { ProductList } from "./ProductList";
-import { TopNav } from "./TopNav";
+import { Routers } from "./Routers";
 export const Home = () => {
   return (
     <div>
-      <TopNav />
-      <ProductList />
+      <Routers />
     </div>
   );
 };

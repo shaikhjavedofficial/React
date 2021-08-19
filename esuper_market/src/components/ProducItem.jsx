@@ -12,7 +12,7 @@ export const ProducItem = () => {
             onClick={() =>
               dispatch({
                 type: "ADD_PRODUCT",
-                data: ["Soap", "Tata Namk", "Hina Chai"],
+                data: ["Soap"],
               })
             }
           >

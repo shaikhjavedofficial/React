@@ -1,17 +1,16 @@
 import React from "react";
-import { NavBar } from "../NavBar";
+import { NavBar } from "./NavBar";
 import { Home2 } from "./Home2";
-import { About } from "./About";
-import { Courses } from "./Courses";
-import { Contact_Us } from "./Contact_Us";
-import { Login } from "../Login/Login";
+import { ProducItem } from "./ProducItem";
+import { Contact_us } from "./Contact_us";
+import { Login } from "./Login";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   useHistory,
 } from "react-router-dom";
-export const Router = () => {
+export const Routers = () => {
   return (
     <div>
       <Router>
@@ -21,14 +20,11 @@ export const Router = () => {
             <Route path="/Home">
               <Home2 />
             </Route>
-            <Route path="/About">
-              <About />
+            <Route path="/ProducItem">
+              <ProducItem />
             </Route>
-            <Route path="/Products">
-              <Courses />
-            </Route>
-            <Route path="/Contact_Us">
-              <Contact_Us />
+            <Route path="/Contact_us">
+              <Contact_us />
             </Route>
             <Route path="/Login">
               <Login />
