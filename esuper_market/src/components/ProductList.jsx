@@ -21,11 +21,11 @@ export const ProductList = ({ stext }) => {
   return (
     <Row>
       <Card className="card1">
-        <Col md={3}>
-          {localData.map((item) => (
-            <ProducItem item={item} />
-          ))}
-        </Col>
+        {localData.map((item) => (
+          <Col md={4}>
+            <ProducItem item={item} />{" "}
+          </Col>
+        ))}
       </Card>
     </Row>
   );

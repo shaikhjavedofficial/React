@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button, Row, Col, Form, Image } from "react-bootstrap";
 import { useDispatch } from "react-redux";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Products.css";
 export const ProducItem = ({ data, remove, item }) => {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ export const ProducItem = ({ data, remove, item }) => {
               <Card.Title>{item.title}</Card.Title>
             </Row>
             <Row>
-              <Image src={item.image} height="300px" width="300px" />
+              <Image className="image" src={item.image} />
             </Row>
             <Row></Row>
             <Row>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Routers } from "./Routers";
 import { getProducts } from "../Service/products";
 //api call , can be done on index
