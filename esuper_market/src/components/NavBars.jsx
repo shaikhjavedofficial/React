@@ -22,6 +22,7 @@ export const NavBars = ({ setstext }) => {
           <Form.Control
             type="text"
             onChange={(e) => setstext(e.target.value)}
+            className="tbox"
           />
           <span style={{ color: "white", padding: "25px" }}>
             <ShoppingCartIcon /> <sup> {products.length}</sup>

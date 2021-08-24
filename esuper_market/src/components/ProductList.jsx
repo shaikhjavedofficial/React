@@ -19,14 +19,16 @@ export const ProductList = ({ stext }) => {
   }, [stext]);
 
   return (
-    <Row>
+    <div>
       <Card className="card1">
-        {localData.map((item) => (
-          <Col md={4}>
-            <ProducItem item={item} />{" "}
-          </Col>
-        ))}
+        <Row>
+          {localData.map((item) => (
+            <Col md={4}>
+              <ProducItem item={item} />{" "}
+            </Col>
+          ))}
+        </Row>
       </Card>
-    </Row>
+    </div>
   );
 };
