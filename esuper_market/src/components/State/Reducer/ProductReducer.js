@@ -1,5 +1,5 @@
 export const ProductReducer = (state = {
-  product: ["nike Shoe"]
+  product: []
 }, action) => {
   if (action.type === "ADD_PRODUCT") {
     return {

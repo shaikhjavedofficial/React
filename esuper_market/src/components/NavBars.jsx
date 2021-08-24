@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown, Form } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navs.css";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-export const NavBar = () => {
+export const NavBars = ({ setstext }) => {
   const products = useSelector((state) => state.ProductReducer.product);
   return (
     <div>
@@ -20,6 +19,10 @@ export const NavBar = () => {
             <NavLink to="/ProductList">ProducList</NavLink>
             <NavLink to="/Contact_us">Contact Us</NavLink>
           </Nav>
+          <Form.Control
+            type="text"
+            onChange={(e) => setstext(e.target.value)}
+          />
           <span style={{ color: "white", padding: "25px" }}>
             <ShoppingCartIcon /> <sup> {products.length}</sup>
           </span>

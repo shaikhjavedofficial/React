@@ -1,5 +1,10 @@
-import { combineReducers, createStore } from "redux";
-import { ProductReducer } from "../Reducer/ProductReducer";
+import {
+  combineReducers,
+  createStore
+} from "redux";
+import {
+  ProductReducer
+} from "../Reducer/ProductReducer";
 export const ConfigStore = () => {
   const store = createStore(
     combineReducers({
