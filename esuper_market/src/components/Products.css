@@ -5,7 +5,7 @@
     padding: 5px;
     margin: 10px;
     color: black;
-    height: 500px;
+    height: 600px;
     justify-content: center;
     position: cover;
 }
@@ -23,4 +23,10 @@
 .image {
     width: 450px;
     height: 350px;
+}
+
+.navbar nav {
+    padding: 10px;
+    position: sticky;
+    top: 0;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button, Row, Col, Form, Image } from "react-bootstrap";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 export const ProducItem = ({ data, remove, item }) => {
   const dispatch = useDispatch();
   return (
@@ -41,7 +42,18 @@ export const ProducItem = ({ data, remove, item }) => {
         </Col>
       </Row>
       <Row>
-        <Button href="/ProductDetails">Details</Button>
+        <Link to="/ProductDetails">
+          <Button
+            onClick={() =>
+              dispatch({
+                type: "SELECTED_PROD_ID",
+                data: item.id,
+              })
+            }
+          >
+            Details
+          </Button>
+        </Link>
       </Row>
     </Card>
   );
