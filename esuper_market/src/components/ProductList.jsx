@@ -5,16 +5,16 @@ import { useSelector } from "react-redux";
 import { ProducItem } from "./ProducItem";
 export const ProductList = ({ stext }) => {
   const productSelector = useSelector((state) => state.ProductReducer.product);
-  const [localData, setLocalData] = useState([]);
+  const [localData, setLocalData] = useState([...productSelector]);
   useEffect(() => {
     setLocalData([...productSelector]);
   }, [productSelector]);
   useEffect(() => {
     if (stext !== "") {
-      const filtered = localData.filter((item) =>
+      const filtered = productSelector.filter((item) =>
         item.title.toLowerCase().includes(stext.toLowerCase())
       );
-      setLocalData(...filtered);
+      setLocalData([...filtered]);
     }
   }, [stext]);
 
