@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 export const ProductDetails = () => {
   const [selectedProduct, setSelectedProduct] = useState([]);
   const myProducts = useSelector((state) => state.ProductReducer.product);
-  const selectedId = useSelector((state) => state.ProductReducer.selectedid[0]);
+  const selectedId = useSelector((state) => state.ProductReducer.selectedId[0]);
   useEffect(() => {
     console.log(selectedId);
     const filteredProd = myProducts.filter((item) => item.id === selectedId);

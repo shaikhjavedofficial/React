@@ -10,7 +10,7 @@ export const ProductReducer = (state = {
   if (action.type === "SELECTED_PROD_ID") {
     return {
       ...state,
-      selectedid: action.data,
+      selectedId: action.data,
     }
   }
   if (action.type === "REMOVE_PRODUCT") {
