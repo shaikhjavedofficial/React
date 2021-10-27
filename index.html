@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>EX</title>
+    <script>
+      // window.onload = function () {
+      //   var canvas = document.getElementById("myCanvas");
+      //   var context = canvas.getContext("2d");
+      //   // to make line
+      //   // context.moveTo(0, 0);
+      //   // context.lineTo(0, 350);
+      //   // context.moveTo(0, 350);
+      //   // context.lineTo(350, 350);
+      //   // context.moveTo(350, 350);
+      //   // context.lineTo(350, -350);
+      //   // context.moveTo(300, -300);
+      //   // context.lineTo(-300, -300);
+      //   // context.arc(150, 150, 80, 10.5 * Math.PI, 1 * Math.PI, false);
+      //   context.rect(50, 50, 300, 350);
+      //   context.stroke();
+      // };
+      window.onload = function () {
+        var canvasLine = document.getElementById("lineCanvas");
+        var contextLine = canvasLine.getContext("2d");
+        contextLine.moveTo(10, 10);
+        contextLine.lineTo(190, 90);
+        // context.arc(0, 150, 80, 1 * Math.PI, 2 * Math.PI, false);
+        // context.arc(0, 150, 80, 2 * Math.PI, 1 * Math.PI, false);
+        contextLine.stroke();
+        var canvasCircle = document.getElementById("circleCanvas");
+        var contextCircle = canvasCircle.getContext("2d");
+        contextCircle.arc(100, 50, 45, 0, 2 * Math.PI);
+        contextCircle.stroke();
+      };
+    </script>
+  </head>
+  <body>
+    <canvas
+      id="lineCanvas"
+      height="100"
+      width="200"
+      style="border: 1px solid #000000; background-color: aqua; margin: 10px"
+    ></canvas>
+    <canvas
+      id="circleCanvas"
+      height="100"
+      width="200"
+      style="border: 1px solid #000000; background-color: aqua; margin: 10px"
+    ></canvas>
+  </body>
+</html>

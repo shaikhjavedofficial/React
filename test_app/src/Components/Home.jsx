@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./ToDoList/ToDo.css";
 
 export const Home = () => {
-  const [toDoItems, setToDoItems] = useState(["ins", "dfsdf"]);
+  const [toDoItems, setToDoItems] = useState([]);
   const handleAdd = (newToDo) => {
     setToDoItems([...toDoItems, newToDo]);
   };
