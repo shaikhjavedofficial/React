@@ -1,0 +1,113 @@
+import React, { useState } from "react";
+import { Card, Col, Row } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./cardg.css";
+export const CardGame = () => {
+  const [colorName1, setColorName1] = useState("white");
+  const [colorName2, setColorName2] = useState("black");
+  const handleChange1 = () => {
+    colorName1 === "white" && setColorName1("black");
+    colorName1 === "black" && setColorName1("white");
+  };
+  const handleChange2 = () => {
+    colorName2 === "white" && setColorName2("black");
+    colorName2 === "black" && setColorName2("white");
+  };
+  const handleChange3 = () => {
+    // colorName3 === "white" && setColorName3("black");
+    // colorName3 === "black" && setColorName3("white");
+  };
+  //   const handleChange4 = () => {
+  //     colorName4 === "white" && setColorName4("black");
+  //     colorName4 === "black" && setColorName4("white");
+  //   };
+  //   const handleChange5 = () => {
+  //     colorName5 === "white" && setColorName5("black");
+  //     colorName5 === "black" && setColorName5("white");
+  //   };
+  //   const handleChange6 = () => {
+  //     colorName6 === "white" && setColorName6("black");
+  //     colorName6 === "black" && setColorName6("white");
+  //   };
+  //   const handleChange7 = () => {
+  //     colorName7 === "white" && setColorName7("black");
+  //     colorName7 === "black" && setColorName7("white");
+  //   };
+  //   const handleChange8 = () => {
+  //     colorName8 === "white" && setColorName8("black");
+  //     colorName8 === "black" && setColorName8("white");
+  //   };
+  //   const handleChange9 = () => {
+  //     colorName9 === "white" && setColorName9("black");
+  //     colorName9 === "black" && setColorName9("white");
+  //   };
+  //   const handleChange10 = () => {
+  //     colorName10 === "white" && setColorName10("black");
+  //     colorName10 === "black" && setColorName10("white");
+  //   };
+  //   const handleChange11 = () => {
+  //     colorName11 === "white" && setColorName11("black");
+  //     colorName11 === "black" && setColorName11("white");
+  //   };
+  //   const handleChange12 = () => {
+  //     colorName12 === "white" && setColorName12("black");
+  //     colorName12 === "black" && setColorName12("white");
+  //   };
+  //   const colorShow = () => {
+  //     if (
+  //       colorName1 == "white" &&
+  //       colorName2 == "white" &&
+  //       colorName3 == "white" &&
+  //       colorName4 == "white" &&
+  //       colorName5 == "white" &&
+  //       colorName6 == "white" &&
+  //       colorName7 == "white" &&
+  //       colorName8 == "white" &&
+  //       colorName9 == "white" &&
+  //       colorName10 == "white" &&
+  //       colorName11 == "white" &&
+  //       colorName12 == "white"
+  //     ) {
+  //       return <span>`The Color of the row is White`</span>;
+  //     } else if (
+  //       colorName1 == "black" &&
+  //       colorName2 == "black" &&
+  //       colorName3 == "black" &&
+  //       colorName4 == "black" &&
+  //       colorName5 == "black" &&
+  //       colorName6 == "black" &&
+  //       colorName7 == "black" &&
+  //       colorName8 == "black" &&
+  //       colorName9 == "black" &&
+  //       colorName10 == "black" &&
+  //       colorName11 == "black" &&
+  //       colorName12 == "black"
+  //     ) {
+  //       return <span>`The Color of the row is Black`</span>;
+  //     } else {
+  //       return <span>`Play The Game`</span>;
+  //     }
+  //   };
+  return (
+    <React.Fragment>
+      <Row>
+        <Col md={1}>
+          {() => {
+            // for (var i = 0; i < 12; i++) {
+            return (
+              <Card
+                className="card1"
+                style={{ "background-color": colorName1 }}
+                onClick={() => {
+                  handleChange1();
+                  handleChange2();
+                  handleChange3();
+                }}
+              ></Card>
+            );
+          }}
+        </Col>
+      </Row>
+    </React.Fragment>
+  );
+};
