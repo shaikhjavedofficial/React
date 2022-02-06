@@ -2,10 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  var a = "asd";
   return (
     <div>
-      <input type="text" />
-      <button>add me</button>
+      <input type="text" title={a} />
     </div>
   );
 }
