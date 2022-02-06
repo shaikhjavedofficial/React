@@ -23,7 +23,10 @@ Index:
 6. show
    contains React CRUD operation, with express and modAPI
 
-7. test_app
+7. skjaved_p
+   contains an game of cards of black and white color.
+
+8. test_app
    an TODO LIST contains creating, deleting and listing tasks
 
 <!-- feels free to customize this list and also contribute by pushing your ideas to this Repo! -->

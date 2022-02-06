@@ -1,0 +1,12 @@
+const initValues = {username:"", pass:""};
+const [formValue, setFormValue] = useState (initValue);
+const handleChange =()=>{
+const {name, value} = e.target;
+setFormVlaue({...formValue, [name]:value})
+}
+const Login=(e)=>{
+e.preventDefault();
+setFormValue(formValue);
+}
+<input onChange={handleChange}
+<button onSubmit={Login}>Login</button>

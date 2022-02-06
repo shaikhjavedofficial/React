@@ -65,39 +65,37 @@ export const Colg = () => {
   };
   const colorShow = () => {
     if (
-      colorName1 &&
-      colorName2 &&
-      colorName3 &&
-      colorName4 &&
-      colorName5 &&
-      colorName6 &&
-      colorName7 &&
-      colorName8 &&
-      colorName9 &&
-      colorName10 &&
-      colorName11 &&
+      colorName1 == "white" &&
+      colorName2 == "white" &&
+      colorName3 == "white" &&
+      colorName4 == "white" &&
+      colorName5 == "white" &&
+      colorName6 == "white" &&
+      colorName7 == "white" &&
+      colorName8 == "white" &&
+      colorName9 == "white" &&
+      colorName10 == "white" &&
+      colorName11 == "white" &&
       colorName12 == "white"
     ) {
       return <span>`The Color of the row is White`</span>;
-    }
-    if (
-      colorName1 &&
-      colorName2 &&
-      colorName3 &&
-      colorName4 &&
-      colorName5 &&
-      colorName6 &&
-      colorName7 &&
-      colorName8 &&
-      colorName9 &&
-      colorName10 &&
-      colorName11 &&
-      colorName12 &&
-      "black"
+    } else if (
+      colorName1 == "black" &&
+      colorName2 == "black" &&
+      colorName3 == "black" &&
+      colorName4 == "black" &&
+      colorName5 == "black" &&
+      colorName6 == "black" &&
+      colorName7 == "black" &&
+      colorName8 == "black" &&
+      colorName9 == "black" &&
+      colorName10 == "black" &&
+      colorName11 == "black" &&
+      colorName12 == "black"
     ) {
       return <span>`The Color of the row is Black`</span>;
     } else {
-      <span>`Play The Game`</span>;
+      return <span>`Play The Game`</span>;
     }
   };
   return (

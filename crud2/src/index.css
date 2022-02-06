@@ -1,0 +1,95 @@
+*{
+    margin:0;   
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  width: 100%;
+}
+.add_btn{
+    margin: 10px;
+    padding: 10px;
+}
+.add_btn > Button{
+    float: right;
+}
+.row{
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.card_main{
+    display:block ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.333%;
+    max-width: 23%;
+    padding: .75rem;
+    margin: 10px;
+    margin-bottom: 2rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: auto;
+}
+
+.card_items{
+ width: 100%;
+}
+.user_avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    margin: 10px;
+}
+.edit_btn_contain{
+    display: flex;
+    justify-content: center;
+    bottom: auto;
+}
+#edit_butt{
+    /* bottom: auto; */
+    margin-top: 10px;
+    background-color: rgba(82, 100, 182, 0.918);
+}
+.value_text{
+    color: rgba(82, 100, 182, 0.76);
+    font-size: 15px;
+}
+.add_emp_btn{
+    background-color:rgba(82, 100, 182, 0.918) ;
+    font-size: large;
+}
+sup{
+    color: crimson;
+}
+select{
+    margin-top: 2rem ;
+    width: 20rem;
+    height: 2.2rem;
+    border: 2px solid #ccc;
+}
+.modal_title{
+
+text-align: center !important;
+align-items: center !important;
+align-content: center !important;
+}
+strong{
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 13px;
+}
