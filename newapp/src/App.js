@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Formik } from "formik";
 
 function App() {
+  var a = "asd";
   const [formData, setformData] = useState({
     name: "",
     email: "",
@@ -67,6 +68,9 @@ function App() {
           </div>
         );
       })}
+      <h1>Name : {name}</h1>
+      <h1>Email : {email}</h1>
+      <h1>Password : {pass}</h1>{" "}
     </div>
   );
 }
