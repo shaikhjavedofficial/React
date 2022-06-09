@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Axios from "axios";
 import axios from "axios";
 import { Form, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";

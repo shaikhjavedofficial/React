@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 
 export const MovieList = () => {
-  const [content, setcontent] = useState("haha");
+  const [content, setcontent] = useState("");
   const handleList = async () => {
     await axios.get("http://localhost:3000/api/movies").then((response) => {
       setTimeout(() => {
