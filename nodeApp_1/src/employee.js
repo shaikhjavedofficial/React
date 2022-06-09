@@ -1,6 +1,6 @@
 const { MongoClient, ServerApiVersion } = require("mongodb");
 // const uri =
-//   "mongodb+srv://skjaved633:SKsun@10@cluster0.1ntth.mongodb.net/?retryWrites=true&w=majority";
+//   "mongodb+srv://skjaved633:<password>@cluster0.1ntth.mongodb.net/?retryWrites=true&w=majority";
 // const client = new MongoClient(uri, {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
@@ -19,7 +19,7 @@ async function main() {
    * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
    */
   const uri =
-    "mongodb+srv://skjaved633:SKsun@10@cluster0.1ntth.mongodb.net/?retryWrites=true&w=majority";
+    "mongodb+srv://skjaved633:<password>@cluster0.1ntth.mongodb.net/?retryWrites=true&w=majority";
 
   try {
     // Connect to the MongoDB cluster
