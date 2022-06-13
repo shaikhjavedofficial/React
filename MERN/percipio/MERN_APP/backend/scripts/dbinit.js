@@ -3,7 +3,12 @@ import { users, courses } from "./data";
 import { UserModel } from "../models/User";
 import { CourseModel } from "../models/Course";
 
-mongoose.connect("mongodb://localhost:27017/test", { useNewUrlParser: true });
+mongoose
+  .connect("mongodb://localhost:27017/test", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then((item) => console.log(item));
 const db = mongoose.connection;
 db.on("error", (error) => {
   console.error(error);
@@ -16,9 +21,9 @@ db.once("open", () => {
       console.log("user error", error);
     }
   });
-  CourseModel.insertMany(courses, (error) => {
-    if (error) {
-      console.log("courses error", error);
-    }
-  });
+  // CourseModel.insertMany(courses, (error) => {
+  //   if (error) {
+  //     console.log("courses error", error);
+  //   }
+  // });
 });
