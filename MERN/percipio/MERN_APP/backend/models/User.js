@@ -5,4 +5,4 @@ export const UserSchema = new Schema({
   city: String,
 });
 
-export const UserModel = mongoose.model("User", UserSchema);
+export const UserModel = mongoose.model("users", UserSchema);
