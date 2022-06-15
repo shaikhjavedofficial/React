@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
-import { Home } from "./Components/Home";
+import Home from "./Components/Home";
 import { Formik } from "formik";
 
 function App() {

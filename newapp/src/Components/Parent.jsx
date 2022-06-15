@@ -1,23 +1,23 @@
 import React from "react";
-import Parent from "./Parent";
-class Home extends React.Component {
+import Child from "./Child";
+class Parent extends React.Component {
   constructor(props) {
     super(props);
   }
   componentWillMount() {
-    console.log("home mount");
+    console.log("parent mount");
   }
   componentWillUnmount() {
-    console.log("home unmount");
+    console.log("parent unmount");
   }
   render() {
     this.componentWillUnmount();
     return (
       <div>
-        Home
-        <Parent />
+        parent
+        <Child />
       </div>
     );
   }
 }
-export default Home;
+export default Parent;
