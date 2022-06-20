@@ -3,9 +3,11 @@ import React, { useState } from "react";
 export const Form = () => {
   const [username, setUsername] = useState("");
   const [msg, setMsg] = useState("");
+  const [list, setList] = useState("");
   const submitForm = (e) => {
     e.preventDefault();
     setMsg("Added");
+    setTimeout(() => setList("test list"), 4000);
   };
   const changeHandler = (e) => {
     if (!isNaN(e.target.value) && e.target.value.length) {
@@ -34,6 +36,11 @@ export const Form = () => {
           add
         </button>
       </form>
+      {list ? (
+        <ul>
+          <li data-testid="test list">{list}</li>
+        </ul>
+      ) : null}
     </div>
   );
 };
