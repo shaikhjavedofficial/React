@@ -1,6 +1,6 @@
 // src/mocks/handlers.js
 import { rest } from "msw";
-const postData = [
+export const postData = [
   {
     id: 1,
     name: "demo",
