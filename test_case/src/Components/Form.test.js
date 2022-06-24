@@ -2,6 +2,8 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { Form } from "./Form";
 
 describe("Form page", () => {
+  // when we want to achive timeout funcionality and the waiting time is more then use
+  jest.setTimeout(100000);
   test("button disabled", () => {
     render(<Form />);
     const button_dis = screen.getByRole("button", { name: "add" });
@@ -44,18 +46,28 @@ describe("Form page", () => {
     render(<Form />);
     const btn = await screen.findByRole("button", { name: "add" });
     fireEvent.click(btn);
-    // if directly try to access the setTimeOut functionality then it will give us error
-    // to check setTimeOut function in the component
-    //     await waitFor(() => {
-    //   screen.getByTestId("test list");
-    // });
-    // above will not work for long time, so give attribute timeout
+    {
+      /* //if directly try to access the setTimeOut functionality then it will give us error
+    //to check setTimeOut function in the component
+        await waitFor(() => {
+      screen.getByTestId("test-list");
+    });
+*/
+    }
+    // above will not work for long time, so give attribute timeout but it requires jest.setTimeOut()
     await waitFor(
       () => {
-        screen.getByTestId("test list");
+        screen.getByTestId("test-list");
       },
       { timeout: 10000 }
     );
-    expect(screen.getByTestId("test list")).toHaveTextContent("test list");
+    expect(screen.getByTestId("test-list")).toHaveTextContent("test list");
+  });
+  test(" alternate to waitfor using findby ", async () => {
+    render(<Form />);
+    const btn = screen.getByRole("button", { name: "add" });
+    fireEvent.click(btn);
+    const list = await screen.findByTestId("test-list");
+    expect(list).toHaveTextContent("test list");
   });
 });

@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### =========================================================================================================================================
+
+### for test mocking goto " mock service worker"
+
+### then create a folder in src "mocks" then create a file "server.js" in it, now intialize it as msw website, create handler.js again initialize
+
+### it as msw, goto setupTest.js and again write the code from msw web,            

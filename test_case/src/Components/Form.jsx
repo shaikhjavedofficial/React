@@ -7,7 +7,7 @@ export const Form = () => {
   const submitForm = (e) => {
     e.preventDefault();
     setMsg("Added");
-    setTimeout(() => setList("test list"), 4000);
+    setTimeout(() => setList("test list"), 1000);
   };
   const changeHandler = (e) => {
     if (!isNaN(e.target.value) && e.target.value.length) {
@@ -38,7 +38,7 @@ export const Form = () => {
       </form>
       {list ? (
         <ul>
-          <li data-testid="test list">{list}</li>
+          <li data-testid="test-list">{list}</li>
         </ul>
       ) : null}
     </div>
