@@ -19,3 +19,4 @@
 10. a middleware is an function that allows us to run other fucntions before the response, using next we can add middleware in node.
 11. start mongodb by mongo --port 27017 -u "devil" -p "123456" --authenticationDatabase "admin"
 12. download robo 3t only software to have gui of mongodb
+13. 
