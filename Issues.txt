@@ -1,0 +1,8 @@
+﻿Issues :
+1. over all page scroll bar
+sol: goto index.css, change body css to 
+body{
+overflow: auto
+}
+
+2.
