@@ -2,17 +2,15 @@ import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap/Button";
-import { CourseLand, Courses } from "../src/Components/Reducer/CourseLand";
-import { CardParent } from "./Components/Cards/CardParent";
-import { Counter } from "./Components/Counter";
 import { PFooter } from "./Components/Z_Footer/PFooter";
+import Body from "./Components/B_Body/Body";
+// import Nav from "./Components/A_Header/Nav";
 
 function App() {
   return (
     <div className="App">
-      <CourseLand />
-      <CardParent />
-      <Counter />
+      {/* <Nav /> */}
+      <Body />
       <br />
       <br />
       <PFooter />

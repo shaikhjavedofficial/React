@@ -4,7 +4,7 @@ import "./Footer.css";
 import { FooterData } from "../Jdata/FooterData";
 export const FooterMain = () => {
   const {
-    Date,
+    // Date,
     title,
     instagram,
     facebook,
@@ -45,6 +45,7 @@ export const FooterMain = () => {
     card3a4,
     Footer2,
   } = FooterData.Data[0];
+  let date = new Date();
   return (
     <footer>
       <link
@@ -147,9 +148,10 @@ export const FooterMain = () => {
       </Row>
       <Row className="footer2">
         <p className="copy">
-          copyright &copy;{Date} <a href="https://pickupbiz.com/">PickupBiz</a>{" "}
-          | Developed & Designed By{" "}
-          <a href="https://pickupbiz.com/">PickupBiz</a>{" "}
+          copyright &copy;{date.getFullYear()}{" "}
+          <a href="https://github.com/shaikhjavedofficial">Shaikh Javed</a> |
+          Developed & Designed By{" "}
+          <a href="https://github.com/shaikhjavedofficial">Shaikh Javed</a>{" "}
         </p>
       </Row>
     </footer>
