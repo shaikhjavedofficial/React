@@ -1,9 +1,9 @@
-nav{
+nav {
     background-color: brown;
     width: 100%;
-    text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
     padding: 10px;
     margin: 20px;
